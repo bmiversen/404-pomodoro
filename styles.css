@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80vh 20vh;
+    height: 100vh;
+}
+
+#view-timer {
+    background-color: black;
+    color: white;
+    grid-row: 1;
+    grid-column: 1 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20vh;
+}
+
+#btn-work {
+    grid-row: 2;
+    grid-column: 1;
+    border: none;
+}
+
+#btn-shortbreak {
+    grid-row: 2;
+    grid-column: 2;
+    border: none;
+}
+
+#btn-longbreak {
+    grid-row: 2;
+    grid-column: 3;
+    border: none;
+}
+
+
+button {
+    font-size: 5vh;
+    outline: none;
+    background-color: limegreen;
+}
+
+button:hover {
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+
+
+
