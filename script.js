@@ -1,4 +1,4 @@
-var audio = new Audio('bimkorgen.mp4');
+var audio = new Audio('bimkorgen.mp3');
 window.onload = (e) => 
 {
     let workbtn = document.getElementById("btn-work");
@@ -24,7 +24,7 @@ function countDown(counter, seconds) {
     clearInterval(timer);
     timer = setInterval(
         function() {
-            if (timeLeft < 0) {
+            if (timeLeft <= 0) {
                 clearInterval(timer);
             }
             let [min, sec] = minSec(seconds);
